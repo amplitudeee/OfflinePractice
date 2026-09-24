@@ -1,7 +1,7 @@
 ## Book 1 Chapter 3
 
 Datatypes:
-a
+
 boolean // true or false
 string //
 number // value between -2^1024 to 2^1024
