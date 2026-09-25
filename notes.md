@@ -53,3 +53,18 @@ const favoriteCities = [
 != Inequality 3 != 3 // false
 === Strict Equality 3 === "3" // false
 !== Strict inequality 3 !== "3" // true
+
+## Book 1 Chapter 5: Controlling Flow
+if (country === "United States" || country === "Liberia"){
+    temperature = temperature + "F";
+} else {
+    temperature = (temperature - 32) * 5 / 9 + "C";
+}
+
+msg = hours < 12 ? ('Good Morning') : ('Welcome');
+
+switch(expressions){
+    case x:
+    case y:
+    default:
+}
