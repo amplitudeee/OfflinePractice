@@ -68,3 +68,23 @@ switch(expressions){
     case y:
     default:
 }
+
+## Book 1 Chapter 6: Arrays
+const colors = ['red', 'green', 'blue'];
+
+new Array();
+const myArray = new Array();
+const myArray = new Array('January','February','March');
+customerDataArray = customerData.split(',');
+
+Javascript Array Methods
+    concat()     A new array made up of the current array, joined with other arrays and/or values
+    every()     True if every element in the given array satisfies the provided testing function
+    filter()    A new array with all the elements of a current array that test true by the given function
+    forEach()   completes the function once for each element in the array
+    includes()  Determines whether an array includes a specified value and returns true or false
+    indexOf() Finds the first occurrence of the specified value within the array; returns -1 if the value is not found
+    join()      joins all elements of an array into a string
+    lastIndexOf()   finds the last occurrence of the specified value within the array; returns -1 if the value is not found
+    map()       creates a new array with the result of a provuded fuybctu
+
