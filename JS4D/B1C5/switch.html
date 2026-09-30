@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statements</title>
+</head>
+<body>
+    <div id="message">There is no message here</div>
+    <script>
+        let msg;
+        const dt = new Date();
+        const month = dt.getMonth();
+        switch(month){
+            case 0:
+                msg = 'Jan 4 is National Spaghetti Day!';
+                break;
+            case 1:
+                msg = 'Feb 14 is Valentines Day!';
+                break;
+            default:
+                msg = 'There are no holidays this month';
+        }
+        const el = document.getElementById('message');
+        el.innerHTML = msg;
+    </script>
+</body>
+</html>
