@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    const ingredients = ['eggs','milk','cheese','garlic','onion','kale','salt','pepper'];
+pop
+    ingredients.pop();                                 // removes last item 'pepper'
+    let removeLastElementAndPutItHere = ingredients.pop();  // removeLastElementAndPutItHere = salt
+shift
+    ingredients.shift();                               // removes first item 'eggs'
+    let removeFirstElementAndPutItHere = ingredients.shift();  // removeFirstElementAndPutItHere = milk
+push
+    ingredients.push('chili flakes');                  // pushes new item to end of array
+    let newLength = ingredients.push('chili flakes');  // tells you the new length of the array after pushing
+unshift
+    ingredients.unshift('bananas');                    // pushes new item to end of array
+    let newLength = ingredients.unshift('bananas');    // tells you the new length of the array after unshifting
+slice()                                                // makes new array between numbers
+    let sliced = ingredients.slice(3,6);               // sliced = ['garlic','onion','kale']
+splice()                                               // removed a number of elements from an array to create 2 arrays 
+    const produce = ingredients.splice(3,3);           // garlic','onion','kale',
+</body>
+</html>
