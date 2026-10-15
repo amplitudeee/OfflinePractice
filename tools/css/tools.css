@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="styles.css"/> /*HTML CSS READER*/
+img {}
 class. {}
 id# {}
 
@@ -8,11 +9,20 @@ display: block; /* stacks elements ontop of each other */
     margin-left: auto; /* margin: 0px auto; is shorthand for both */
     margin-right: auto; /* margin: 0px auto; is shorthand for both */
 display: inline; /* stacks side by side */
-    text-align: center;
+    text-align: center;}
+
+flex-box {
+    /* ROW */
 display: flex; /* turns DIRECT children into inline elements side by side */
                /* set divs for each child that needs a column */
-    justify-content: center; /* puts flexbox items in center */
-    justify-content: space-around, end, start, space-between;
+    justify-content: start, center, end, space-around, space-evenly, space-between; /* X-axis controls LEFT to RIGHT*/
+    align-items: start, center, end; /* Y-axis controls, TOP to BOTTOM */
+    margin: 10px; /* to modify space between/around after justifying */
+    /* COLUMN */
+display: flex;
+    flex-direction: column; /* turns DIRECT children into columns */
+    justify-content: start, center, end, space-around, space-evenly, space-between; /* Y-axis controls TOP to BOTTOM*/
+    align-items: start, center, end; /* X-axis controls, LEFT to RIGHT */
     margin: 10px; /* to modify space between/around after justifying */}
 
 /* browser auto sets body in window to have margin of 8px */
@@ -25,16 +35,17 @@ the-box-model {
 /*padding = inside border*/
 /*content = stuff inside*/
     background: colorofthebox;
+    color: colorofthetext;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    color: colorofthetext;}
+    text-shadow: 0px 0px 1px black;}
 
 bg-image {
     color: white;
     background-image: url("../images/blah.jpg");
-    baxkground-size: cover;}
+    background-size: cover;}
 
-most-common-css-properties {
+most-common-css-properties-inherited {
     color
     font
     line-height
@@ -50,6 +61,10 @@ google-fonts { /* more at html tools file*/
 @font-face { /* for fonts not on google, use 2 or 3 fonts most cause it slows down the website*/
     src: url('corleone.ttf'); /* custom ttf file located in codebase*/
     font-family: Corleone;}
+
+finishing-touches {
+    site-contrast-checker
+}
 
 
 
