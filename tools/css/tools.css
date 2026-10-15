@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="styles.css"/> /*HTML CSS READER*/
+class. {}
+id# {}
+
+inline-vs-block-elements {
+display: block; /* stacks elements ontop of each other */
+    width: 10px;
+    margin-left: auto; /* margin: 0px auto; is shorthand for both */
+    margin-right: auto; /* margin: 0px auto; is shorthand for both */
+display: inline; /* stacks side by side */
+    text-align: center;
+display: flex; /* turns DIRECT children into inline elements side by side */
+               /* set divs for each child that needs a column */
+    justify-content: center; /* puts flexbox items in center */
+    justify-content: space-around, end, start, space-between;
+    margin: 10px; /* to modify space between/around after justifying */}
+
+/* browser auto sets body in window to have margin of 8px */
+
+the-box-model {
+/*Margins = outside border*/
+/*border = border*/
+    border-radius: 4px solid white;
+    border-bottom: 4px dotted blue;
+/*padding = inside border*/
+/*content = stuff inside*/
+    background: colorofthebox;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: colorofthetext;}
+
+bg-image {
+    color: white;
+    background-image: url("../images/blah.jpg");
+    baxkground-size: cover;}
+
+most-common-css-properties {
+    color
+    font
+    line-height
+    letter-spacing
+    text-align
+    text-transform
+    text-indent
+    white-space }
+
+google-fonts { /* more at html tools file*/
+    font-family: 'Orbitron', sans-serif;}
+
+@font-face { /* for fonts not on google, use 2 or 3 fonts most cause it slows down the website*/
+    src: url('corleone.ttf'); /* custom ttf file located in codebase*/
+    font-family: Corleone;}
+
+
+
+
+
+
+
+
+
+
