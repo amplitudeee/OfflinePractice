@@ -2,6 +2,10 @@
 img {}
 class. {}
 id# {}
+h1, p {} /* Separate selectors with commas to apply the same declarations to multiple elements.*/
+h1 + p {} /* The + selector targets an element that comes immediately after another element. */
+h2 li{} /* targets element in another element*/
+a:link {} a:visited {} a:hover {} gift-img:hover{}
 
 inline-vs-block-elements {
 display: block; /* stacks elements ontop of each other */
@@ -15,17 +19,17 @@ flex-box {
     /* ROW */
 display: flex; /* turns DIRECT children into inline elements side by side */
                /* set divs for each child that needs a column */
-    justify-content: start, center, end, space-around, space-evenly, space-between; /* X-axis controls LEFT to RIGHT*/
+    justify-content: start, center, end, 
+    space-around, space-evenly, space-between; /* X-axis controls LEFT to RIGHT*/
     align-items: start, center, end; /* Y-axis controls, TOP to BOTTOM */
-    margin: 10px; /* to modify space between/around after justifying */
+    gap: 10px; /* to modify space between/around after justifying */
     /* COLUMN */
 display: flex;
     flex-direction: column; /* turns DIRECT children into columns */
-    justify-content: start, center, end, space-around, space-evenly, space-between; /* Y-axis controls TOP to BOTTOM*/
+    justify-content: start, center, end, 
+    space-around, space-evenly, space-between; /* Y-axis controls TOP to BOTTOM*/
     align-items: start, center, end; /* X-axis controls, LEFT to RIGHT */
-    margin: 10px; /* to modify space between/around after justifying */}
-
-/* browser auto sets body in window to have margin of 8px */
+    gap: 10px; /* to modify space between/around after justifying */}
 
 the-box-model {
 /*Margins = outside border*/
@@ -43,7 +47,13 @@ the-box-model {
 bg-image {
     color: white;
     background-image: url("../images/blah.jpg");
-    background-size: cover;}
+    /* if using bg-image be sure to use the html attributes
+    role='img' and aria-label='description' in the rel div*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background: linear-gradient(lightskyblue white); /*gradient bby*/
+}
 
 most-common-css-properties-inherited {
     color
@@ -66,7 +76,19 @@ finishing-touches {
     site-contrast-checker
 }
 
+selector {
+  property: value;
+}
 
+/* Nuances
+-Browser auto sets body in window to have margin of 8px
+-The min-width: auto Trap: Flex items have an implicit min-width: auto and min-height: auto. This means they cannot shrink smaller than their internal content (e.g., long unbroken text or images).
+    Fix: Add min-width: 0; (or min-height: 0;) to the flex item when dealing with text overflow issues or nested flex containers.
+-Margins Don't Collapse: Margins of flex items do not collapse with each other or with the parent container's margins.
+-margin: auto is Magic: Setting margin-left: auto or margin: auto on a single flex item forces it to consume all available free space in that direction, making it incredibly easy to push items to the far right or center them completely.
+-Incompatible Properties: float, clear, and vertical-align have no effect on a flex item.
+-Flex-basis vs Width: If both width (or height) and flex-basis are defined on an item, flex-basis takes precedence along the main axis.
+-Table Elements: Flexbox works on table wrapper elements, but direct table children (<tr>, <td>) do not play nicely as flex items unless wrapped or targeted carefully.
 
 
 
