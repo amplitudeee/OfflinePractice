@@ -1,11 +1,10 @@
-let count = 0;
-const counts = 0;
+let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById('save-el')
+let count = 0
+const counts = 0
 
-function save() {console.log(count);}
+function save() {
+  let countStr = count + " - "
+  saveEl.textConent += countStr}
 
-// edit the DOM with text content
-let welcomeText = document.getElementById("drain");
-let space = " ";
-let name = "James";
 
-welcomeText.textContent = "Welcome" + space + name;
