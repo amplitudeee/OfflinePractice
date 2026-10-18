@@ -7,4 +7,5 @@ function save() {
   let countStr = count + " - "
   saveEl.textConent += countStr}
 
+console.log("a" + 1 + 4) // string wins, yields: a14
 
