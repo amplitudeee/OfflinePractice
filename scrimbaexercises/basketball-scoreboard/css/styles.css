@@ -1,8 +1,53 @@
 body {
     margin: 0;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container {
+.scoreboard {
     display: flex;
     justify-content: space-around;
+    background-color: #1F2937;
+}
+
+.scoreColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin: 25px 0px 5px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+@font-face {
+    src: url('../CursedTimer.ttf');
+    font-family: Timer;
+}
+
+.score {
+    text-align: center;
+    width: 80px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-size:300%;
+    font-family: Timer;
+    padding: 10px 5px 2px 5px;
+}
+
+.buttons{
+    margin: 10px 1px 30px;
+    border-color: #6484b0;
+    background-color: #1F2937;
+    color:  #6484b0;
+    border-radius: 4px;
+}
+
+#newgame {
+    width: 300px;
+    margin: 0px;
 }
