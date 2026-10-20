@@ -9,3 +9,14 @@ function save() {
 
 console.log("a" + 1 + 4) // string wins, yields: a14
 
+let cards = [firstCard, secondCard] // array
+
+cards.push()
+cards.pop()
+
+for (let i = 0; i > 10; i++) {}
+
+variable.length
+
+for (let i = 0; i > cards.length; I++) {}
+
