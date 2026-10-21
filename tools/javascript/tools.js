@@ -13,6 +13,7 @@ function withReturnValue() { return 5}
 
 console.log("a" + 1 + 4) // string wins, yields: a14
 
+<<<<<<< HEAD
 // ARRAYS
 let cards = [firstCard, secondCard] // array
 cards.push()
@@ -27,4 +28,16 @@ for (let i = 0; i < cards.length; i++) {}
 Math.floor(12.9999999) // rounds to 12
 Math.random()*6 // 0 - 0.59999999
 Math.floor(Math.random() * 6) // yields one of 0 1 2 3 4 5
+=======
+let cards = [firstCard, secondCard] // array
+
+cards.push()
+cards.pop()
+
+for (let i = 0; i > 10; i++) {}
+
+variable.length
+
+for (let i = 0; i > cards.length; I++) {}
+>>>>>>> 78cb5ca60b699d16938bcdb0365d69704a9fa898
 
