@@ -25,6 +25,6 @@ for (let i = 0; i < cards.length; i++) {}
 
 // MATH
 Math.floor(12.9999999) // rounds to 12
-Math.random()*6 // 0 - 0.59999999
-Math.floor(Math.random() * 6) // yields one of 0 1 2 3 4 5
-
+Math.random()*6 // 0 - 5.9999999
+Math.floor(Math.random()*6) // 0-5
+Math.floor(Math.random()*6) + 1 // 1-5
