@@ -5,3 +5,5 @@
         - For loops, start, end, steps
         21 - Relearning functions with return values
         - Learned how to make a pretty good RNG formula
+        22 - && and || Operators
+        - Objects introduction and practice. Inc Methods that attached to objects
