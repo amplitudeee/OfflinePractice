@@ -7,3 +7,5 @@
         - Learned how to make a pretty good RNG formula
         22 - && and || Operators
         - Objects introduction and practice. Inc Methods that attached to objects
+        23 - Review exercises
+        - Password Generator 

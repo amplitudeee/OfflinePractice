@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+#app {
+    padding: 75px 50px;
+    width: 450px;
+    border-radius: 20px;
+    background: rgb(22, 22, 41);
+    border: 10px solid aliceblue;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Courier New', Courier, monospace;
+    color:azure;
+}
+
+span {
+    color:#C8D6AF;
+}
+
+button {
+    margin-top: 30px;
+    background-color:#C8D6AF;
+    color: azure;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: medium;
+    font-weight: 900;
+}
+
+hr {
+    margin-top:25px;
+    border: none;
+    border-top: 1px solid rgb(38, 38, 71);
+    width: 100%;
+}
+
+.passwords{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.passwords p {
+    background: rgb(38, 38, 71);
+    border-radius: 10px;
+    margin: 0px;
+    padding: 10px 30px;
+}

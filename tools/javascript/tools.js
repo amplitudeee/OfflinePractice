@@ -15,8 +15,10 @@ console.log("a" + 1 + 4) // string wins, yields: a14
 
 // ARRAYS
 let cards = [firstCard, secondCard] // array
-cards.push()
-cards.pop()
+cards.push() //end
+cards.pop() //end
+cards.shift() //remove from beginning
+cards.unshift() //add to the beginning
 
 // FOR LOOPS
 for (let i = 0; i > 10; i++) {}
