@@ -8,4 +8,7 @@
         22 - && and || Operators
         - Objects introduction and practice. Inc Methods that attached to objects
         23 - Review exercises
-        - Password Generator 
+        - Password Generator Assignment
+        - Starting Chrome extension lesson
+        - Utilizing Input Tag
+        - Learning innerHTML as a way to create HTML elements

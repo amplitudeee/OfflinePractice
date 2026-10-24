@@ -5,6 +5,10 @@ let saveClass = document.querySelector('.class')
 let count = 0
 const counts = 0
 
+// EDIT HTML
+htmlelement.textContent // can edit HTML element text
+htmlelement.innerHTML = "<p>buyme</p>"// can create HTML element
+
 // FUNCTIONS
 function save() {
   let countStr = count + " - "
@@ -33,6 +37,14 @@ Math.floor(Math.random()*6) + 1 // 1-5
 
 // OBJECTS
 let banana = {
-  color: "yelllow",
+  color: "yellow",
   status: ['ripe', 'not ripe']
 }
+
+// JS click addition
+inputBtn.addEventListener('click', function() {
+  console.log('Test baby test baby')
+})
+
+// Select value of input
+inputEl.value

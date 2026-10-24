@@ -29,7 +29,11 @@ display: flex;
     justify-content: start, center, end, 
     space-around, space-evenly, space-between; /* Y-axis controls TOP to BOTTOM*/
     align-items: start, center, end; /* X-axis controls, LEFT to RIGHT */
-    gap: 10px; /* to modify space between/around after justifying */}
+    gap: 10px; /* to modify space between/around after justifying */
+width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+box-sizing: border-box; /*eliminates the extra padding pushed into width when width is 100%*/}
 
 the-box-model {
 /*Margins = outside border*/
