@@ -12,3 +12,5 @@
         - Starting Chrome extension lesson
         - Utilizing Input Tag
         - Learning innerHTML as a way to create HTML elements
+        28 - Saving DOM compute cost by running for loop then inserting into DOM rather than inserting at every for loop iteration
+        - 

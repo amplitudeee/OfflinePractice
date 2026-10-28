@@ -48,3 +48,4 @@ inputBtn.addEventListener('click', function() {
 
 // Select value of input
 inputEl.value
+inputEl.value = '' // clears field
