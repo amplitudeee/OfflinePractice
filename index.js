@@ -1,40 +1,34 @@
-let num1 = 8
-let num2 = 2
-let num3 = 0
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
-let sumEl = document.getElementById("sum-el")
+// Problem 1
+const multiply = (a, b) => a * b;
 
-// Create four functions: add(), subtract(), divide(), multiply()
-// Call the correct function when the user clicks on one of the buttons
-// Perform the given calculation using num1 and num2
-// Render the result of the calculation in the paragraph with id="sum-el"
+console.log(multiply(10, 12));
 
-// E.g. if the user clicks on the "Plus" button, you should render
-// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
+// Problem 2
+const square = (num) => num * num;
 
-function add(){
-    num3 = num1 + num2
-    render()
-}
+console.log(square(10));
 
-function subtract() {
-    num3 = num1 - num2
-    render()
-}
+// Problem 3
+const createUser = (username, age) => ({ username, age });
 
-function divide() {
-    num3 = num1 / num2
-    render()
-}
+console.log(createUser("Alice", 25));
 
-function multiply () {
-    num3 = num1 * num2
-    render()
-}
+// Problem 4
+const prices = [10, 20, 30, 40];
 
-function render() {
-    sumEl.textContent = num3
-    console.log(num3)
-}
+const taxedPrice = prices.map((price) => price * 1.1);
 
+console.log(taxedPrice);
+
+// Problem 5
+const numbers = [5, 12, 8, 130, 44, 3];
+
+const filtered = numbers.filter((number) => number > 10);
+
+console.log(filtered);
+
+// Problem 6
+const checkAge = (age) => {
+  if (age > 17) return "Access Granted";
+  else return "Access Denied";
+};

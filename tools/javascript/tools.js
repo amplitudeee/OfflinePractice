@@ -41,11 +41,21 @@ let banana = {
   status: ['ripe', 'not ripe']
 }
 
-// JS click addition
+// JS CLICK ADDITION
 inputBtn.addEventListener('click', function() {
   console.log('Test baby test baby')
 })
 
-// Select value of input
+// HTML INPUT SELECTION
 inputEl.value
 inputEl.value = '' // clears field
+
+// ARROW FUNCTIONS SAMPLES
+const multiply = (a,b) => a * b
+const square = num => num * num
+const createUser = (username, age) => {username, age} // createUser('Alice', 25) yields {username: 'Alice', age: 25}
+const taxedPrice = prices.map(price => price * 1.5) // Yields 1.5* every element in the prices array. The map function acts like a for loop
+const capitalNames = names.map(name => name.toUpper())
+const checkAge = age => age > 30 ? 'Access Granted' : 'Access Denied' // checkAge(20) yields 'Access Granted'
+
+

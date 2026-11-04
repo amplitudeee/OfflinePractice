@@ -13,4 +13,5 @@
         - Utilizing Input Tag
         - Learning innerHTML as a way to create HTML elements
         28 - Saving DOM compute cost by running for loop then inserting into DOM rather than inserting at every for loop iteration
-        - 
+        3 - Learned and practiced Arrow Functions JS and list comprehension in python
+        4 - More Arrow functions practice
