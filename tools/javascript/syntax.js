@@ -24,23 +24,23 @@ const banana = {
   status: ['ripe', 'not ripe']
 }
 
-    // define object
+    // DEFINE OBJECT
     const car = {}
     const person = new Object()
     const place = Object.create()
 
-    // initiate state of object
+    // INITIATE STATE OF OBJECT
     function car(brand, model) {
         this.brand = brand
         this.model = model
     }
 
-    // initialize new object
+    // INITIATE NEW OBJECT
     const myCar = new car ('ford','focus')
         // myCar.brand // ford
         // myCar.model // fiesta
 
-    // retrieve object properties
+    // RETRIEVE OBJECT PROPERTIES
     myCar.color // 'blue' dot notation
     myCar['the color'] // 'blue' square notation
         // for property names with special characters, spaces, underscores...etc...
@@ -49,7 +49,7 @@ const banana = {
     myCar.driveTrain = '4x4'    // define new property
     delete car.brand            // delete property
 
-    // Assign function(method) to object
+    // ASSIGN FUNCTIONS(METHODS) TO OBJECTS
     const car = {
         start: function(word) {
             console.log(word, this.make)
@@ -59,17 +59,17 @@ const banana = {
         car.start('on') // 'On Ford'
         // *Can't use arrow functions
 
-// Classes
+// CLASSES
 class Person {
     name        // Create class with captital first letter
 }
-    // instantiate new class
+    // INSTANTIATE NEW CLASS
     const Matt = new Person()
 
-    // change class property
+    // CHANGE CLASS PROPERTY
     Matt.name = 'Bob'
 
-    // add class methods
+    // ADD CLASS METHOD
     class Person {
         hello() {
             return 'Hello, I am Matt'

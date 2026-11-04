@@ -1,3 +1,4 @@
+// DOM MANIPULATION
 let countElement = document.getElementById("count-el")
 let saveElement = document.getElementById('save-el')
 let countId = document.querySelector('#id')
