@@ -51,11 +51,11 @@ inputEl.value
 inputEl.value = '' // clears field
 
 // ARROW FUNCTIONS SAMPLES
-const multiply = (a,b) => a * b
+const multiply = (a,b) => a * b // multiply is function name, (a,b) are parameters, a * b is return value
 const square = num => num * num
 const createUser = (username, age) => {username, age} // createUser('Alice', 25) yields {username: 'Alice', age: 25}
 const taxedPrice = prices.map(price => price * 1.5) // Yields 1.5* every element in the prices array. The map function acts like a for loop
 const capitalNames = names.map(name => name.toUpper())
 const checkAge = age => age > 30 ? 'Access Granted' : 'Access Denied' // checkAge(20) yields 'Access Granted'
-
+const isEven = num => num % 2 === 0 ? 'Even' : 'Odd' // isEven(21) yields 'Odd'
 
