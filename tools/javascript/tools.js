@@ -9,37 +9,11 @@ const counts = 0
 htmlelement.textContent // can edit HTML element text
 htmlelement.innerHTML = "<p>buyme</p>"// can create HTML element
 
-// FUNCTIONS
-function save() {
-  let countStr = count + " - "
-  saveEl.textConent += countStr}
-function withReturnValue() { return 5}
-
-console.log("a" + 1 + 4) // string wins, yields: a14
-
-// ARRAYS
-let cards = [firstCard, secondCard] // array
-cards.push() //end
-cards.pop() //end
-cards.shift() //remove from beginning
-cards.unshift() //add to the beginning
-
-// FOR LOOPS
-for (let i = 0; i > 10; i++) {}
-variable.length
-for (let i = 0; i < cards.length; i++) {}
-
 // MATH
 Math.floor(12.9999999) // rounds to 12
 Math.random()*6 // 0 - 5.9999999
 Math.floor(Math.random()*6) // 0-5
 Math.floor(Math.random()*6) + 1 // 1-5
-
-// OBJECTS
-let banana = {
-  color: "yellow",
-  status: ['ripe', 'not ripe']
-}
 
 // JS CLICK ADDITION
 inputBtn.addEventListener('click', function() {
@@ -50,7 +24,7 @@ inputBtn.addEventListener('click', function() {
 inputEl.value
 inputEl.value = '' // clears field
 
-// ARROW FUNCTIONS SAMPLES
+// ARROW FUNCTIONS SAMPLES (JAVASCRIPT HANDBOOK)
 const multiply = (a,b) => a * b // multiply is function name, (a,b) are parameters, a * b is return value
 const square = num => num * num
 const createUser = (username, age) => {username, age} // createUser('Alice', 25) yields {username: 'Alice', age: 25}
