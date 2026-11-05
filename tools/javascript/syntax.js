@@ -24,55 +24,57 @@ const banana = {
   status: ['ripe', 'not ripe']
 }
 
-    // DEFINE OBJECT
-    const car = {}
-    const person = new Object()
-    const place = Object.create()
+  // DEFINE OBJECT
+  const car = {}
+  const person = new Object()
+  const place = Object.create(null)
 
-    // INITIATE STATE OF OBJECT
-    function car(brand, model) {
-        this.brand = brand
-        this.model = model
+  // USE CONST FUNCTION TO DEFINE OBJECT
+  function car(brand, model) {
+    this.brand = brand
+    this.model = model
+  }
+
+  // INSTANTIATE NEW OBJECT
+  const myCar = new car ('ford','focus')
+    // myCar.brand // ford
+    // myCar.model // focus
+
+  // RETRIEVE OBJECT PROPERTIES
+  myCar.color // 'blue' dot notation
+  myCar['the color'] // 'blue' square notation
+    // for property names with special characters, spaces, underscores...etc...
+  myCar.color = 'yellow'      // redefine
+  myCar['the color'] = 'red'  // redefine
+  myCar.driveTrain = '4x4'    // define new property
+  delete car.brand            // delete property
+
+  // ASSIGN FUNCTIONS(METHODS) TO OBJECTS
+  const car = {
+    start: function(word) {
+      console.log(word, this.make)
     }
+  }
 
-    // INITIATE NEW OBJECT
-    const myCar = new car ('ford','focus')
-        // myCar.brand // ford
-        // myCar.model // fiesta
+  // ASSIGN FUNCTIONS(METHODS) TO OBJECTS THAT EXIST
+  car.start = function(word) {
+    console.log(word, this.make)
+  }
 
-    // RETRIEVE OBJECT PROPERTIES
-    myCar.color // 'blue' dot notation
-    myCar['the color'] // 'blue' square notation
-        // for property names with special characters, spaces, underscores...etc...
-    myCar.color = 'yellow'      // redefine
-    myCar['the color'] = 'red'  // redefine
-    myCar.driveTrain = '4x4'    // define new property
-    delete car.brand            // delete property
-
-    // ASSIGN FUNCTIONS(METHODS) TO OBJECTS
-    const car = {
-        start: function(word) {
-            console.log(word, this.make)
-        }
-    }
-        // invoke function using dot notation
-        car.start('on') // 'On Ford'
-        // *Can't use arrow functions
+  // invoke function using dot notation
+  car.start('on') // 'On Ford'
+  // *Can't use arrow functions
 
 // CLASSES
 class Person {
-    name        // Create class with captital first letter
+  name        // Create class with captital first letter
 }
-    // INSTANTIATE NEW CLASS
-    const Matt = new Person()
+  // INSTANTIATE NEW CLASS
+  const Matt = new Person()
 
-    // CHANGE CLASS PROPERTY
-    Matt.name = 'Bob'
+  // CHANGE CLASS PROPERTY
+  Matt.name = 'Bob'
 
-    // ADD CLASS METHOD
-    class Person {
-        hello() {
-            return 'Hello, I am Matt'
-        }
-    }
+  // ADD CLASS METHOD
+  class Person {hello() {return 'Hello, I am Matt'}}
 
