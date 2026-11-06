@@ -1,3 +1,6 @@
+// CONVERSIONS
+Number() // converts strings to numbers
+
 // FUNCTIONS
 function save() {
   let countStr = count + " - "

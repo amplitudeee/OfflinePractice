@@ -25,6 +25,16 @@ inputBtn.addEventListener('click', function() {
 inputEl.value
 inputEl.value = '' // clears field
 
+// TEMPLATE LITERALS
+listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
+listItems += `<li><a target='_blank' href='${myLeads}'>${myLeads}</a></li>`
+
+// LOCAL STORAGE
+localStorage.setItem('myLeads', 'www.banana.com')
+localStorage.getItem('myLeads')
+localStorage.clear()
+
+
 // ARROW FUNCTIONS SAMPLES (JAVASCRIPT HANDBOOK)
 const multiply = (a,b) => a * b // multiply is function name, (a,b) are parameters, a * b is return value
 const square = num => num * num
