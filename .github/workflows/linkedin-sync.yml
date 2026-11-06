@@ -1,0 +1,29 @@
+name: Post Milestone to LinkedIn
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  share-update:
+    # Only run if the commit message contains [linkedin]
+    if: contains(github.event.head_commit.message, '[linkedin]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publish to LinkedIn
+        env:
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          REPO_URL: ${{ github.event.repository.html_url }}
+        run: node .github/scripts/postToLinkedIn.js
