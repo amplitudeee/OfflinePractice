@@ -3,7 +3,7 @@ name: Post Milestone to LinkedIn
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   share-update:
