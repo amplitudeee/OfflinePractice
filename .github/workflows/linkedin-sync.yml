@@ -26,4 +26,4 @@ jobs:
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
           COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
           REPO_URL: ${{ github.event.repository.html_url }}
-        run: node .github/scripts/postToLinkedIn.js
+        run: node .github/scripts/postToLinkedin.js
