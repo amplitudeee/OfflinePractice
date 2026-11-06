@@ -9,4 +9,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
         run: |
-          node -e 'fetch("https://api.linkedin.com/v2/userinfo", { headers: { Authorization: "Bearer " + process.env.TOKEN } }).then(r => r.json()).then(d => console.log("COPY THIS URN:", "urn:li:person:" + d.sub))'
+          node -e 'fetch("https://linkedin.com", { headers: { Authorization: "Bearer " + process.env.TOKEN } }).then(r => r.json()).then(d => console.log("RESPONSE:", JSON.stringify(d)))'
