@@ -24,7 +24,7 @@ const postBody = {
 };
 
 async function publishPost() {
-  const response = await fetch("https://api.linkedin.com", {
+  const response = await fetch("https://api.linkedin.com/v2/ugcPosts", {
     method: "POST",
     headers: {
       "Authorization": `Bearer ${token}`,
