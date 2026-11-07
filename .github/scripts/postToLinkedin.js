@@ -13,7 +13,7 @@ const postBody = {
   specificContent: {
     "com.linkedin.ugc.ShareContent": {
       shareCommentary: {
-        text: `🚀 Coding Milestone:\n\n${cleanUpdate}\n\nCheck out the code here: ${repoUrl}\n\n#buildinpublic #javascript #codingjourney`
+        text: `🚀 Coding Milestone:\n\n${cleanUpdate}\n\n#buildinpublic #javascript #codingjourney`
       },
       shareMediaCategory: "NONE"
     }

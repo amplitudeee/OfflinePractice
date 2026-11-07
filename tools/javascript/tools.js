@@ -1,14 +1,14 @@
 // DOM MANIPULATION
-let countElement = document.getElementById("count-el")
-let saveElement = document.getElementById('save-el')
-let countId = document.querySelector('#id')
-let saveClass = document.querySelector('.class')
-let count = 0
+const countElement = document.getElementById("count-el")
+const saveElement = document.getElementById('save-el')
+const countId = document.querySelector('#id')
+const saveClass = document.querySelector('.class')
+const count = 0
 const counts = 0
 
 // EDIT HTML
-htmlelement.textContent // can edit HTML element text
-htmlelement.innerHTML = "<p>buyme</p>"// can create HTML element
+domElement.textContent // can edit HTML element text
+domElement.innerHTML = "<p>buyme</p>"// can create HTML element
 
 // MATH
 Math.floor(12.9999999) // rounds to 12
@@ -17,23 +17,17 @@ Math.floor(Math.random()*6) // 0-5
 Math.floor(Math.random()*6) + 1 // 1-5
 
 // JS CLICK ADDITION
-inputBtn.addEventListener('click', function() {
+btnName.addEventListener('click', function() {
   console.log('Test baby test baby')
 })
 
 // HTML INPUT SELECTION
-inputEl.value
-inputEl.value = '' // clears field
+domElement.value
+domElement.value = '' // clears field
 
 // TEMPLATE LITERALS
 listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
 listItems += `<li><a target='_blank' href='${myLeads}'>${myLeads}</a></li>`
-
-// LOCAL STORAGE
-localStorage.setItem('myLeads', 'www.banana.com')
-localStorage.getItem('myLeads')
-localStorage.clear()
-
 
 // ARROW FUNCTIONS SAMPLES (JAVASCRIPT HANDBOOK)
 const multiply = (a,b) => a * b // multiply is function name, (a,b) are parameters, a * b is return value

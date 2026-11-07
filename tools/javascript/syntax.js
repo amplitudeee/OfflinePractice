@@ -1,5 +1,8 @@
 // CONVERSIONS
 Number() // converts strings to numbers
+Boolean() // check truthy or falsey console.log(Boolean(variable))
+console.log(typeof variable) //
+// falsey values  0 "" null undefined NaN
 
 // FUNCTIONS
 function save() {
@@ -11,7 +14,7 @@ console.log("a" + 1 + 4) // string wins, yields: a14
 
 // ARRAYS
 const cards = [firstCard, secondCard] // array
-cards.push() //end
+cards.push() // add end
 cards.pop() //end
 cards.shift() //remove from beginning
 cards.unshift() //add to the beginning
