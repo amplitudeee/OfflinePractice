@@ -6,9 +6,9 @@ const saveClass = document.querySelector('.class')
 const count = 0
 const counts = 0
 
-// EDIT HTML
-domElement.textContent // can edit HTML element text
+// CREATE/EDIT HTML
 domElement.innerHTML = "<p>buyme</p>"// can create HTML element
+domElement.textContent // can edit HTML element text
 
 // MATH
 Math.floor(12.9999999) // rounds to 12
