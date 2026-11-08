@@ -62,7 +62,7 @@ bg-image {
 
 most-common-css-properties-inherited {
     color
-    font
+    font-family
     line-height
     letter-spacing
     text-align
@@ -76,6 +76,11 @@ google-fonts { /* more at html tools file*/
 @font-face { /* for fonts not on google, use 2 or 3 fonts most cause it slows down the website*/
     src: url('corleone.ttf'); /* custom ttf file located in codebase*/
     font-family: Corleone;}
+
+text-adjustments {
+  font-size: 2px; /* base size */
+  font-size: 2rem; /* multiplier */
+}
 
 finishing-touches {
     site-contrast-checker

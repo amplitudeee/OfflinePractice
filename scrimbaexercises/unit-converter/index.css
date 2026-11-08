@@ -1,10 +1,27 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 body {
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 /* ENTRY AREA */
 #entry {
   background-color: #6943FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 30px;
 }
 
 #input-num {
@@ -12,37 +29,44 @@ body {
   color: white;
   border:#B295FF solid 1px;
   border-radius: 4px;
-}
-
-h1 {
-  color: #ffffff;
+  font-size: 58px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  max-width: 100px;
 }
 
 #convert-btn {
+  margin:20px;
   border:#ffffff solid;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: #ffffff;
-  padding:3px 20px;
+  padding:5px 20px;
+  font-size: 15px;
 }
 
 /* CONVERSION AREA*/
 #conversion {
   background-color: #F4F4F4;
-}
-
-#convert-btn {
-  color: #3d3d3d;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding:5px;
 }
 
 /* RESULT BOXES*/
 .result-box {
+  margin:20px;
+  padding-top:10px;
   background-color: white;
 }
 
 h2 {
   color: #5A537B;
+  font-size: 20px;
 }
 
 .result-box p {
   color: #353535;
+  font-size: 15px;
 }
