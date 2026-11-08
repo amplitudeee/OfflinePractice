@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <link rel="stylesheet" href="./index.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--
+    Name: Matt Salvadori
+    File: index.html
+    Date: Nov 11 2026
+    Unit Converter Chrome Extension
+    -->
+  </head>
+  <body>
+    <div id="entry">
+      <h1>Metric/Imperial Unit Conversion</h1>
+      <input type="text" placeholder="Enter amount here">
+      <button id="convert-btn">Convert</button>
+    </div>
+    <div id="conversion">
+      <div class="result-box" id="length-box">
+        <h2>Length (Meter/Feet)</h2>
+        <p id="length-conversion"></p>
+      </div>
+      <div class="result-box" id="volume-box">
+        <h2>Volume (Liters/Gallons)</h2>
+        <p id="volume-conversion"></p>
+      </div>
+      <div class="result-box" id="mass-box">
+        <h2>Mass (Kilograms/Pounds)</h2>
+        <p id="mass-conversion"></p>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

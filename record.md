@@ -21,3 +21,5 @@
     - Remembered how to target objects in arrays
     - Learning to grab tabs from chrome and save it into local storage
     - Completed chrome browser extension. 
+    - Finished review exercises
+    8 - Started working on a Unit Converter project
