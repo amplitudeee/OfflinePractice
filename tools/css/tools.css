@@ -38,8 +38,9 @@ box-sizing: border-box; /*eliminates the extra padding pushed into width when wi
 the-box-model {
 /*Margins = outside border*/
 /*border = border*/
-    border-radius: 4px solid white;
-    border-bottom: 4px dotted blue;
+  border:#B295FF solid 1px;
+  border-radius: 4px;
+  border-bottom: 4px dotted blue;
 /*padding = inside border*/
 /*content = stuff inside*/
     background: colorofthebox;
