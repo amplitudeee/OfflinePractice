@@ -13,27 +13,27 @@
   Name: Matt Salvadori
   File: index.html
   Date: Nov 11 2026
-  Unit Converter Chrome Extension
+  Unit Converter Web App
   -->
   </head>
   <body>
     <div id="entry">
       <h1>Metric/Imperial Unit Conversion</h1>
-      <input id="input-num" type="text" placeholder="0">
-      <button id="convert-btn">Convert</button>
+      <input id="input-num" type="text" placeholder="0" aria-label="Enter a numeric value to convert between metric and imperial units">
+      <button id="convert-btn" aria-label="Convert the entered value to metric and imperial units">Convert</button>
     </div>
     <div id="conversion">
       <div class="result-box" id="length-box">
         <h2>Length (Meter/Feet)</h2>
-        <p id="length-conversion">&nbsp;</p>
+        <p id="length-string" aria-live="polite" aria-label="Length conversion result">&nbsp;</p>
       </div>
       <div class="result-box" id="volume-box">
         <h2>Volume (Liters/Gallons)</h2>
-        <p id="volume-conversion">&nbsp;</p>
+        <p id="volume-string" aria-live="polite" aria-label="Volume conversion result">&nbsp;</p>
       </div>
       <div class="result-box" id="mass-box">
         <h2>Mass (Kilograms/Pounds)</h2>
-        <p id="mass-conversion">&nbsp;</p>
+        <p id="mass-string" aria-live="polite" aria-label="Mass conversion result">&nbsp;</p>
       </div>
     </div>
   </body>

@@ -3,6 +3,8 @@ Number() // converts strings to numbers
 Boolean() // check truthy or falsey console.log(Boolean(variable))
 console.log(typeof variable) //
 // falsey values  0 "" null undefined NaN
+.toFixed(2) // Adjusts decimal places to arguement
+
 
 // FUNCTIONS
 function save() {
@@ -16,8 +18,8 @@ console.log("a" + 1 + 4) // string wins, yields: a14
 const cards = [firstCard, secondCard] // array
 cards.push() // add end
 cards.pop() //end
-cards.shift() //remove from beginning
-cards.unshift() //add to the beginning
+cards.shift() // remove from beginning
+cards.unshift() // add to the beginning
 
 // FOR LOOPS
 for (let i = 0; i > 10; i++) {}

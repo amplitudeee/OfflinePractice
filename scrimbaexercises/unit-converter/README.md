@@ -1,19 +1,40 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Metric/Imperial Unit Converter
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A web-based unit converter that transforms values between metric and imperial systems. Convert lengths (meters/feet), volumes (liters/gallons), and mass (kilograms/pounds) instantly.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- **Length Conversion:** Meters ↔ Feet
+- **Volume Conversion:** Liters ↔ Gallons  
+- **Mass Conversion:** Kilograms ↔ Pounds
+- **Auto-scaling Input:** Input field grows/shrinks with user input
+- **Real-time Results:** Instant conversion on button click
+- **Accessibility:** ARIA labels and live regions for screen readers
+- **Responsive Design:** Clean purple and gray UI that works on all devices
 
-Happy Coding!
+## Project Structure
+
+- `index.html` — Main HTML with input, button, and result boxes
+- `index.css` — Styling with flexbox layout and color scheme
+- `index.js` — Conversion logic and DOM manipulation
+
+## How to Use
+
+1. Enter a numeric value in the input field
+2. Click the "Convert" button
+3. View the conversions in the three result boxes (Length, Volume, Mass)
+
+## Technologies Used
+
+- HTML5
+- CSS3 (Flexbox)
+- Vanilla JavaScript
+- Google Fonts (Inter)
+
+## Author
+
+Matt Salvadori
+
+---
+
+**Learning Context:** Scrimba Full-Stack Developer Path
