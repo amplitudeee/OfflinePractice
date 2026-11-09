@@ -22,4 +22,6 @@
     - Learning to grab tabs from chrome and save it into local storage
     - Completed chrome browser extension. 
     - Finished review exercises
-    8 - Started working on a Unit Converter project
+    8 - Finished working on a Unit Converter project
+    9 - Recompleted css portion of Unit converter project as I didn't fully understand how to use flexbox.
+    - Working on terminal portion of scrimba course
