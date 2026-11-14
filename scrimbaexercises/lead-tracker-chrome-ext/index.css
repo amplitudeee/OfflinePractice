@@ -15,14 +15,14 @@ input {
 
 button {
     background: #5f9341;
-    color: white;
+    color: rgb(233,233,233);
     padding: 10px 20px;
     border: 1px solid #5f9341;
     font-weight: bold;
 }
 
 #delete-btn {
-    background: white;
+    background: rgb(233,233,233);
     color: #5f9341;
 }
 
