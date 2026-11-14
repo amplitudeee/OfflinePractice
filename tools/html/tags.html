@@ -51,17 +51,17 @@ Ordered lists can use type and start attributes.
 </a>
 <button onclick="document.location='default.asp'">Use Button As Link</button>
 
-    // TARGET ATTRIBUTE VALUES
-    _blank: open in a new tab or window.
-    _self: open in the current tab.
-    _parent: open in the parent frame.
-    _top: open in the full browser window.
-    framename: open in a named iframe.
+  // TARGET ATTRIBUTE VALUES
+  _blank: open in a new tab or window.
+  _self: open in the current tab.
+  _parent: open in the parent frame.
+  _top: open in the full browser window.
+  framename: open in a named iframe.
 
-    // PAGE BOOKMARK EXAMPLE
-    <h2 id="C4">Chapter 4</h2>
-    <a href="#C4">Jump to Chapter 4</a>
-    <a href="html_demo.html#C4">Jump to Chapter 4 on another page</a>
+  // PAGE BOOKMARK EXAMPLE
+  <h2 id="C4">Chapter 4</h2>
+  <a href="#C4">Jump to Chapter 4</a>
+  <a href="html_demo.html#C4">Jump to Chapter 4 on another page</a>
 
 // FONT
 <head>
@@ -72,3 +72,7 @@ Ordered lists can use type and start attributes.
     rel="stylesheet"
   />
 </head>
+
+// INPUT BOXES
+<label for="name">Full name</label> /*Make sure the for attribute matches the id of the input*/
+<input class="contact-input" id="name" type="text" placeholder="Sherlock Holmes"/>

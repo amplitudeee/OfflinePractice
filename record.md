@@ -27,4 +27,6 @@
     9 - Recompleted css portion of Unit converter project as I didn't fully understand how to use flexbox.
     - Working on terminal portion of scrimba course
     14 - Rewrote all my cmd/CLI notes to be more reusable and referencable 
-    - Learned how to create issues on github
+    - Learned how to create issues on github, isolate the fix on a self-contained branch, open a pull request for peer review and merge cleanly to update the codebase
+    - Worked on accessibility exercises in scrimba
+    
