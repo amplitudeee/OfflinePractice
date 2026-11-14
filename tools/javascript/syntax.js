@@ -2,9 +2,13 @@
 Number() // converts strings to numbers
 Boolean() // check truthy or falsey console.log(Boolean(variable))
 console.log(typeof variable) //
-// falsey values  0 "" null undefined NaN
 .toFixed(2) // Adjusts decimal places to arguement
 
+// falsey values  0 "" null undefined NaN
+// OPERATORS
+console.log(0 || 100) // 100, if first is false then return second
+console.log(0 ?? 100) // 0, if first is null or undefined return second
+console.log(null ?? 100) // 100, if first is null or undefined return second
 
 // FUNCTIONS
 function save() {

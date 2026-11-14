@@ -9,96 +9,95 @@ a:link {} a:visited {} a:hover {} gift-img:hover{}
 
 inline-vs-block-elements {
 display: block; /* stacks elements ontop of each other */
-    width: 10px;
-    margin-left: auto; /* margin: 0px auto; is shorthand for both */
-    margin-right: auto; /* margin: 0px auto; is shorthand for both */
+  width: 10px;
+  margin-left: auto; /* margin: 0px auto; is shorthand for both */
+  margin-right: auto; /* margin: 0px auto; is shorthand for both */
 display: inline; /* stacks side by side */
-    text-align: center;}
+  text-align: center;}
 
 flex-box {
-    /* ROW */
+/*The min-width: auto Trap: Flex items have an implicit min-width: auto and min-height: auto. This means they cannot shrink smaller than their internal content (e.g., long unbroken text or images).
+    Fix: Add min-width: 0; (or min-height: 0;) to the flex item when dealing with text overflow issues or nested flex containers.
+Margins Don't Collapse: Margins of flex items do not collapse with each other or with the parent container's margins.
+Margin: auto is Magic: Setting margin-left: auto or margin: auto on a single flex item forces it to consume all available free space in that direction, making it incredibly easy to push items to the far right or center them completely.
+Incompatible Properties: float, clear, and vertical-align have no effect on a flex item.
+Flex-basis vs Width: If both width (or height) and flex-basis are defined on an item, flex-basis takes precedence along the main axis.
+Table Elements: Flexbox works on table wrapper elements, but direct table children (<tr>, <td>) do not play nicely as flex items unless wrapped or targeted carefully.
+Flexbox only applies to the selected element and the direct children, not grandchildren*/
+
+/************* ROW **********/
 display: flex; /* turns DIRECT children into inline elements side by side */
                /* set divs for each child that needs a column */
-    justify-content: start, center, end, 
-    space-around, space-evenly, space-between; /* X-axis controls LEFT to RIGHT*/
-    align-items: start, center, end; /* Y-axis controls, TOP to BOTTOM */
-    gap: 10px; /* to modify space between/around after justifying */
-    /* COLUMN */
+  justify-content: start, center, end, 
+  space-around, space-evenly, space-between; /* X-axis controls LEFT to RIGHT*/
+  align-items: start, center, end; /* Y-axis controls, TOP to BOTTOM */
+  gap: 10px; /* to modify space between/around after justifying */
+/************* COLUMN ********/
 display: flex;
-    flex-direction: column; /* turns DIRECT children into columns */
-    justify-content: start, center, end, 
-    space-around, space-evenly, space-between; /* Y-axis controls TOP to BOTTOM*/
-    align-items: start, center, end; /* X-axis controls, LEFT to RIGHT */
-    gap: 10px; /* to modify space between/around after justifying */
+  flex-direction: column; /* turns DIRECT children into columns */
+  justify-content: start, center, end, 
+  space-around, space-evenly, space-between; /* Y-axis controls TOP to BOTTOM*/
+  align-items: start, center, end; /* X-axis controls, LEFT to RIGHT */
+  gap: 10px; /* to modify space between/around after justifying */
 width: 100%;
 padding-left: 10px;
 padding-right: 10px;
 box-sizing: border-box; /*eliminates the extra padding pushed into width when width is 100%*/}
 
 the-box-model {
+/*Browser auto sets body in window to have margin of 8px*/
 /*Margins = outside border*/
+  margin: 0px;
 /*border = border*/
   border:#B295FF solid 1px;
   border-radius: 4px;
   border-bottom: 4px dotted blue;
 /*padding = inside border*/
+  padding: 0px;
 /*content = stuff inside*/
-    background: colorofthebox;
-    color: colorofthetext;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    text-shadow: 0px 0px 1px black;}
+  background: colorofthebox;
+  color: colorofthetext;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2px; /* base size */
+  font-size: 2rem; /* multiplier */
+  text-shadow: 0px 0px 1px black;}
+
+google-fonts { /* more at html tools file*/
+  font-family: 'Orbitron', sans-serif;}
+
+@font-face { /* for fonts not on google, use 2 or 3 fonts most cause it slows down the website*/
+  src: url('corleone.ttf'); /* custom ttf file located in codebase*/
+  font-family: Corleone;}
+
 
 bg-image {
-    color: white;
-    background-image: url("../images/blah.jpg");
-    /* if using bg-image be sure to use the html attributes
-    role='img' and aria-label='description' in the rel div*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right top;
-    background: linear-gradient(lightskyblue white); /*gradient bby*/
+  color: white;
+  background-image: url("../images/blah.jpg");
+  /* if using bg-image be sure to use the html attributes
+  role='img' and aria-label='description' in the rel div*/
+  background-color: rgb(255,255,255,0); /* used for background-blend-mode*/
+  background-blend-mode: luminosity;      /* used to lighten or darken image*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background: linear-gradient(lightskyblue white); /*gradient bby*/
 }
 
 most-common-css-properties-inherited {
-    color
-    font-family
-    line-height
-    letter-spacing
-    text-align
-    text-transform
-    text-indent
-    white-space }
+  color
+  line-height
+  letter-spacing
+  text-align
+  text-transform
+  text-indent
+  white-space }
 
-google-fonts { /* more at html tools file*/
-    font-family: 'Orbitron', sans-serif;}
-
-@font-face { /* for fonts not on google, use 2 or 3 fonts most cause it slows down the website*/
-    src: url('corleone.ttf'); /* custom ttf file located in codebase*/
-    font-family: Corleone;}
-
-text-adjustments {
-  font-size: 2px; /* base size */
-  font-size: 2rem; /* multiplier */
-}
 
 finishing-touches {
-    site-contrast-checker
+  site-contrast-checker
 }
-
-selector {
-  property: value;
-}
-
-/* Nuances
--Browser auto sets body in window to have margin of 8px
--The min-width: auto Trap: Flex items have an implicit min-width: auto and min-height: auto. This means they cannot shrink smaller than their internal content (e.g., long unbroken text or images).
-    Fix: Add min-width: 0; (or min-height: 0;) to the flex item when dealing with text overflow issues or nested flex containers.
--Margins Don't Collapse: Margins of flex items do not collapse with each other or with the parent container's margins.
--margin: auto is Magic: Setting margin-left: auto or margin: auto on a single flex item forces it to consume all available free space in that direction, making it incredibly easy to push items to the far right or center them completely.
--Incompatible Properties: float, clear, and vertical-align have no effect on a flex item.
--Flex-basis vs Width: If both width (or height) and flex-basis are defined on an item, flex-basis takes precedence along the main axis.
--Table Elements: Flexbox works on table wrapper elements, but direct table children (<tr>, <td>) do not play nicely as flex items unless wrapped or targeted carefully.
 
 
 
