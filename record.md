@@ -13,6 +13,7 @@
     - Utilizing Input Tag
     - Learning innerHTML as a way to create HTML elements
     28 - Saving DOM compute cost by running for loop then inserting into DOM rather than inserting at every for loop iteration
+  Nov
     3 - Learned and practiced Arrow Functions JS and list comprehension in python
     4 - More Arrow functions practice
     7 - Working on localstorage manipulation using JSON.stringify and JSON.parse to deal with arrays
@@ -25,3 +26,5 @@
     8 - Finished working on a Unit Converter project
     9 - Recompleted css portion of Unit converter project as I didn't fully understand how to use flexbox.
     - Working on terminal portion of scrimba course
+    14 - Rewrote all my cmd/CLI notes to be more reusable and referencable 
+    - Learned how to create issues on github
