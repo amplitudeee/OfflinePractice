@@ -29,4 +29,5 @@
     14 - Rewrote all my cmd/CLI notes to be more reusable and referencable 
     - Learned how to create issues on github, isolate the fix on a self-contained branch, open a pull request for peer review and merge cleanly to update the codebase
     - Worked on accessibility exercises in scrimba
-    
+    15 - Learning to replace DIVS with landmark elements for google readability and for general accessibility.
+    - Added heading stucture samples to my html tool file

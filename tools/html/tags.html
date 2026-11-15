@@ -1,9 +1,11 @@
-// BASIC ELEMENTS
-<h1> to <h6> define headings.</h1></h6>
-<p> defines a paragraph.&nbsp;(placeholder)</p>
-<pre> preserves spaces and line breaks.</pre>
-<hr> adds a thematic break or horizontal rule.
-<br> creates a line break.
+// LANDMARK ELEMENTS (USED FOR GOOGLE READABILITY)
+<nav>
+<header>
+<main>
+<section>
+<footer>
+
+// CONTAINERS/SECTIONS
 <div> is a block-level container. Block elements usually start on a new line.
 <span> is an inline container. Inline elements usually stay within the current line of text.
   <div style="background-color: black; color: white; padding: 20px;">
@@ -13,6 +15,19 @@
   <span style="color: darkolivegreen; font-weight: bold;">
     dark green
   </span>
+
+// BASIC ELEMENTS
+<h1> // **** use only 1 h1 per page ****
+<h2> // This is the structure, only apply subheadings
+  <h3>  // to the parent heading
+    <h4>
+    </h4>
+  </h3>
+</h2>
+<p> defines a paragraph.&nbsp;(placeholder)</p>
+<pre> preserves spaces and line breaks.</pre>
+<hr> adds a thematic break or horizontal rule.
+<br> creates a line break.
 
 // TEXT FORMATTING ELEMENTS
 <b> makes text bold.
@@ -35,10 +50,11 @@
 // LISTS
 <ul> creates an unordered list.
 <ol> creates an ordered list.
-<li> defines a list item.
-<dl> creates a description list.
-<dt> defines a term.
-<dd> defines the description for that term.
+  <li> defines a list item.
+    list-style-type: none; in css removes bullet points
+  <dl> creates a description list.
+  <dt> defines a term.
+  <dd> defines the description for that term.
 Ordered lists can use type and start attributes.
 
 // LINKS
@@ -50,6 +66,10 @@ Ordered lists can use type and start attributes.
   <img src="smiley.gif" alt="HTML tutorial" style="width: 42px; height: 42px;">
 </a>
 <button onclick="document.location='default.asp'">Use Button As Link</button>
+<button id="toggleTheme" 
+        role="switch"   // makes button tab accessible
+        aria-pressed="false" 
+        onclick="toggleTheme()">Light Mode</button>
 
   // TARGET ATTRIBUTE VALUES
   _blank: open in a new tab or window.
@@ -76,3 +96,25 @@ Ordered lists can use type and start attributes.
 // INPUT BOXES
 <label for="name">Full name</label> /*Make sure the for attribute matches the id of the input*/
 <input class="contact-input" id="name" type="text" placeholder="Sherlock Holmes"/>
+
+  // FIELDSET, LEGEND, AND RADIO BUTTONS
+
+  <fieldset> A semantic container used to group related form controls (such as a set of radio buttons representing a single question).
+  <legend> Provides a caption or title for the <fieldset>. It tells users and assistive technologies what the group of options is about.
+  <input type="radio"> creates a radio button (lets a user select ONLY ONE of a limited number of choices).
+
+  /* Note: All radio buttons in the same group must share the exact same "name" attribute so only one can be selected at a time. */
+  /* Note: The "value" attribute defines the data sent to the server when the form is submitted. */
+
+  <fieldset>
+    <legend>Choose your favorite web language:</legend>
+
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+  </fieldset>

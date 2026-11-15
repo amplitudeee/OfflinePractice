@@ -10,7 +10,8 @@ EDITING
 CTRL + ArrowLeft/Arrow Right // Jump to next/prev word
 CTRL + L // Select Line
 CTRL + SHIFT + K // Delete Line
-SELECTWORD then CTRL + D // Edit multiple words
+SELECTWORD then CTRL + D // Edit multiple like words
+ALT + LEFT CLICK // Allows you to type in multiple locations
 
 QUOKKA
 CTRL + SHIFT + P then Quokka.js: START on current file
