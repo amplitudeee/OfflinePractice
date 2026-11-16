@@ -8,6 +8,7 @@ const counts = 0
 
 // CREATE/EDIT HTML
 domElement.innerHTML = "<p>buyme</p>"// can create HTML element
+domElement.outerHTML = '<p>replace element</p>' // replaces entire element
 domElement.textContent // can edit HTML element text
 
 // MATH
