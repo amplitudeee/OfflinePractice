@@ -5,6 +5,13 @@ const toggleBtn = document.querySelector("#toggleBtn");
 const resetBGBtn = document.querySelector("#resetBGbtn");
 const colorState = document.querySelector("#state");
 
+const states = [
+  { btnText: 'OFF', label: "Light", bg: 'white'  },
+  { btnText: 'DIM', label: 'Dim', bg: 'lightgrey'},
+  { btnText: 'ON', label: 'DARK', bg: 'grey'}
+]
+
+let currentState = 0;
 let count = 0;
 let isOn = false;
 let btnCooldown = false;
@@ -26,30 +33,29 @@ toggleBtn.addEventListener("click", () => {
   // if buttoncooldown is on exit
   if (btnCooldown) return;
 
-  // change to opposite state
-  isOn = !isOn;
+  // cycle through states every click looping back around when done
+  currentState = (currentState + 1) % states.length
+  updateBG();
 
-  // if state is changed to off(false) set timer for 2s
-  if (!isOn) {
+  // if state is changed to off(0) set timer for 2s
+  if (currentState === 0) {
     // set cooldowm to on
     btnCooldown = true;
-    // update page
-    updateBG();
     setTimeout(() => {
       btnCooldown = false;
     }, 2000);
-  } else {
-    updateBG();
-  }
-});
+}});
 
 resetBGBtn.addEventListener("click", () => {
-  isOn = false;
+  currentState = 0;
   updateBG();
 });
 
 let updateBG = () => {
-  toggleBtn.textContent = isOn ? "ON" : "OFF";
-  colorState.textContent = isOn ? "Dark" : "Light";
-  document.body.style.backgroundColor = isOn ? "grey" : "white";
+  const current = states[currentState]
+  toggleBtn.textContent = current.btnText;
+  colorState.textContent = current.label;
+  document.body.style.backgroundColor = current.bg;
 };
+
+updateBG();
