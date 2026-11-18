@@ -81,19 +81,20 @@ bg-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
-  background: linear-gradient(lightskyblue white); /*gradient bby*/
+  background: linear-gradient(lightskyblue white); /*gradient bby*/}
+
+transition-effect {
+  div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s;} /*this transitions the divs width after bieng hovered over in 3s */
+
+  div:hover {
+  width: 300px;
+  transition: width 1s;} /*you can also go backwards and transition when not on hover based on time aswell */
 }
 
-most-common-css-properties-inherited {
-  color
-  line-height
-  letter-spacing
-  text-align
-  text-transform
-  text-indent
-  white-space }
-
-
 finishing-touches {
-  site-contrast-checker
+  site-contrast-checker;
 }
