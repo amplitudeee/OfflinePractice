@@ -31,3 +31,5 @@
     - Worked on accessibility exercises in scrimba
     15 - Learning to replace DIVS with landmark elements for google readability and for general accessibility.
     - Added heading stucture samples to my html tool file
+    18 - Did something I forgot
+    19 - Learned about forEach (high order array methond) loops and how they can utilize arrow functions to help apply identical logic to 3 different array elements

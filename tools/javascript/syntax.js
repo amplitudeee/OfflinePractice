@@ -25,10 +25,24 @@ cards.pop() //end
 cards.shift() // remove from beginning
 cards.unshift() // add to the beginning
 
+  ////////////////// HIGH ORDER ARRAY METHODS
+  // FOREACH .foreach() ARROW FUNCTION (loads element to first param(btn), index to second(index), array to third(arr)
+  choiceButtons.forEach((btn,index) => {
+    btn.addEventListener('click',() => handleGuess(index));
+  }) // this one passes 3 buttons through the same logic (handleGuess(index))
+
+  // MAP     .map()
+  const lowerWords = secretSet.map((word) => word.toLowerCase());
+  // Result: ['yes', 'no', 'maybe']
+
+  // FILTER  .filter()
+  const shortWords = secretSet.filter((word) => word.length <= 3);
+  // Result: ['YES', 'NO']
+
 // DO WHILE
 do {
-
-} while ()
+  secretIndex = Math.floor(Math.random()*secretSet.length)
+} while (secretIndex === selectedIndex)
 
 // FOR LOOPS
 for (let i = 0; i > 10; i++) {}
