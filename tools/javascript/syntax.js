@@ -25,6 +25,11 @@ cards.pop() //end
 cards.shift() // remove from beginning
 cards.unshift() // add to the beginning
 
+// DO WHILE
+do {
+
+} while ()
+
 // FOR LOOPS
 for (let i = 0; i > 10; i++) {}
 variable.length
