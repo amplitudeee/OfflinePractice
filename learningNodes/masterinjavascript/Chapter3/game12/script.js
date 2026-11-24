@@ -1,0 +1,1 @@
+const roll = Math.random(); if (roll < 0.5) { result = 'Small Prize'; } else if (roll < 0.8) { result = 'Medium Prize'; } else { result = 'Jackpot!'; }

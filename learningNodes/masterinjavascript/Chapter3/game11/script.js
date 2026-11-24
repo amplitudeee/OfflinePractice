@@ -1,0 +1,1 @@
+const colors = ['red', 'blue', 'green', 'yellow']; const choice = colors[Math.floor(Math.random() * colors.length)];
