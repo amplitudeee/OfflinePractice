@@ -4,7 +4,7 @@ const resetBtn = document.querySelector('#reset')
 const msg = document.querySelector('#msg')
 const showHideBtn = document.querySelector('#showhide')
 
-const SECRET = ['letmein',
+const SECRETS = ['letmein',
                 'bananaa',
                 'jumpstreet']
 let hidePass = true 
@@ -30,7 +30,7 @@ checkBtn.addEventListener('click', ()=> {
     return;
   }
 
-  if(SECRET.includes(pwd.value)) {
+  if(SECRETS.includes(pwd.value)) {
     setMessage('Access granted!','ok');
     checkBtn.disabled = true;
   } else {
@@ -38,13 +38,12 @@ checkBtn.addEventListener('click', ()=> {
     attempt++;
   }
 
-  // Give password hint after second attempt
+  // Give password hints after second attempt
   if(attempt===2) {
-    const firstPwd = SECRET[0]
-    const secretHint = SECRET[0] + '*'.repeat(SECRET.length - 1);
+    const secretHint = SECRETS
+      .map(secret => secret[0]+"*".repeat(secret.length))
+      .join(', ')
     secretMessage(`Hint: ${secretHint}`);
-
-    const secondPwd = SECRET[1]
   }
 
   // Lock out box after third attempt
