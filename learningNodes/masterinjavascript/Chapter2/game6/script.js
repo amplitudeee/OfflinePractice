@@ -2,8 +2,13 @@ const pwd = document.querySelector('#pwd')
 const checkBtn = document.querySelector('#check')
 const resetBtn = document.querySelector('#reset')
 const msg = document.querySelector('#msg')
+const showHideBtn = document.querySelector('#showhide')
 
-const SECRET = 'letmein'
+const SECRET = ['letmein',
+                'bananaa',
+                'jumpstreet']
+let hidePass = true 
+let attempt = 0
 
 function setMessage(text,type) {
   msg.textContent = text;
@@ -25,12 +30,34 @@ checkBtn.addEventListener('click', ()=> {
     return;
   }
 
-  if(guess===SECRET) {
-    setMessage('Access granted!','ok')
+  if(SECRET.includes(pwd.value)) {
+    setMessage('Access granted!','ok');
     checkBtn.disabled = true;
   } else {
     setMessage('Incorrect. Try again.','bad');
+    attempt++;
   }
+
+  // Give password hint after second attempt
+  if(attempt===2) {
+    const firstPwd = SECRET[0]
+    const secretHint = SECRET[0] + '*'.repeat(SECRET.length - 1);
+    secretMessage(`Hint: ${secretHint}`);
+
+    const secondPwd = SECRET[1]
+  }
+
+  // Lock out box after third attempt
+  if(attempt===3) {
+    pwd.disabled = true;
+    setMessage('That was your third attemped, you are locked out. Please contact your administrator for assistance','crimson')
+  }
+})
+
+showHideBtn.addEventListener('click', ()=>{
+  hidePass = !hidePass
+  hidePass ? (pwd.type = 'password', showHideBtn.textContent = 'Show Password')
+           : (pwd.type = 'text', showHideBtn.textContent = 'Hide Password')
 })
 
 resetBtn.addEventListener('click',()=> {
@@ -38,3 +65,4 @@ resetBtn.addEventListener('click',()=> {
   pwd.focus();
   checkBtn.disabled = false;
   setMessage('','warn');
+});
