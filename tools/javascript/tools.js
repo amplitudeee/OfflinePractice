@@ -16,6 +16,7 @@ Math.floor(12.9999999) // rounds to 12
 Math.random()*6 // 0 - 5.9999999
 Math.floor(Math.random()*6) // 0-5
 Math.floor(Math.random()*6) + 1 // 1-5
+crypto.getRandomValues() // SECURITY RANDOM
 
 // JS CLICK ADDITION
 btnName.addEventListener('click', function() {
