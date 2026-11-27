@@ -73,6 +73,7 @@ const banana = {
 
   // RETRIEVE OBJECT PROPERTIES
   myCar.color // 'blue' dot notation
+  myCar[currentCount] // accessing with a variable needs to be done in brackets
   myCar['the color'] // 'blue' square notation
     // for property names with special characters, spaces, underscores...etc...
   myCar.color = 'yellow'      // redefine
@@ -95,6 +96,9 @@ const banana = {
   // invoke function using dot notation
   car.start('on') // 'On Ford'
   // *Can't use arrow functions
+
+  // render object in textContent
+  countsText.textContent = JSON.stringify(counts)
 
 // CLASSES
 class Person {
